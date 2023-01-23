@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee - Mortgage</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="housing-facts">
+            <h3>Bostadens fakta</h3>
+            <section>
+                <label for="price">Pris</label>
+                <input id="price" type="number" value="4500000" />
+            </section>
+            <section>
+                <label for="deeds">Pantbrev uttagna</label>
+                <input id="deeds" type="number" value="2341002" />
+            </section>
+            <section>
+                <label for="driftkostnad">Driftkostnad (kr/år)</label>
+                <input id="driftkostnad" type="number" value="44540" />
+            </section>
+        </div>
+        <div class="our-facts">
+            <h3>Fakta</h3>
+            <section>
+                <label for="salary">Årslön</label>
+                <input id="salary" type="number" value="1168800" />
+            </section>
+            <section>
+                <label for="deposit">Kontantinsats</label>
+                <input id="deposit" type="number" value="1000000" />
+            </section>
+            <section>
+                <label for="employee-mortgage-rate">Personallån</label>
+                <input id="employee-mortgage-rate" type="number" value="2.0" pattern="^\d*(\.\d{0,2})?$" />
+            </section>
+            <section>
+                <label for="mortgage-rate">Lån</label>
+                <input id="mortgage-rate" type="number" value="4.0" pattern="^\d*(\.\d{0,2})?$" />
+            </section>
+        </div>
+        <div class="calculations">
+            <h3>Uträkning</h3>
+            <section>
+                <label for="deposit-cost">Pantbrevskostnad</label>
+                <input disabled id="deposit-cost" type="number" value="0" />
+            </section>
+            <section>
+                <label for="stamp-duty">Stämpelskatt</label>
+                <input disabled id="stamp-duty" type="number" value="100000" />
+            </section>
+            <section>
+                <label for="deposit-minimum">Kontantinsats krav</label>
+                <input disabled id="deposit-minimum" type="number" value="100000" />
+            </section>
+            <section>
+                <label for="mortgage-calculation">Lån</label>
+                <input disabled id="mortgage-calculation" type="number" value="2500000" />
+            </section>
+            <section>
+                <label for="interest-cost-per-month">Räntekostnad per månad</label>
+                <input disabled id="interest-cost-per-month" type="number" value="100000" />
+            </section>
+            <section>
+                <label for="deposit-and-taxes">Kontantinsats + skatter</label>
+                <input disabled id="deposit-and-taxes" type="number" value="100000" />
+            </section>
+            <section>
+                <label for="amortization-cost-per-month">Amorteringskostnad per månad</label>
+                <input disabled id="amortization-cost-per-month" type="number" value="100000" />
+            </section>
+            <section>
+                <label for="amortization-percentage">Amortering i procet</label>
+                <input disabled id="amortization-percentage" type="number" value="100000" />
+            </section>
+            <section>
+                <label for="debt-ratio">Skuldkvot</label>
+                <input disabled id="debt-ratio" type="number" value="100000" />
+            </section>
+        </div>
+        <div class="summary">
+            <h3>Summering</h3>
+            <section>
+                <label for="amortization">Amortering</label>
+                <input disabled id="amortization" type="number" value="100000" />
+            </section>
+            <section>
+                <label for="interest-cost">Ränta</label>
+                <input disabled id="interest-cost" type="number" value="100000" />
+            </section>
+            <section>
+                <label for="other-expenses">Övriga kostnader</label>
+                <input disabled id="other-expenses" type="number" value="100000" />
+            </section>
+            <section>
+                <label for="monthly-cost">Månadskostnad</label>
+                <input disabled id="monthly-cost" type="number" value="100000" />
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

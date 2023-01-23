@@ -47,6 +47,33 @@ section {
     padding:  0 1rem;
 }
 @media only screen and (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+    label {
+        padding: 5px 0;
+    }
+    main {
+        border-radius: 20px !important;
+    }
+    input:not([disabled]) {
+        padding: 10px !important;
+    }
+    .calculations > h3 {
+        display: none;
+    }
+        .summary > h3 {
+        display: none;
+    }
+    .calculations, .summary {
+        grid-template-columns: 1fr 1fr;
+    }
+    .calculations > section:last-child,   .summary > section:last-child  {
+    border-bottom: none;
+    padding-bottom: .5rem;
+
+}
+
   section {
     display: grid;
     grid-template-columns: 1fr;

@@ -1,11 +1,12 @@
 {
   "name": "Mortgage Calc",
   "short_name": "MCalc",
-  "start_url": "index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#433044",
-  "theme_color": "#dec1ffff",
+  "theme_color": "#dec1ff",
   "orientation": "portrait-primary",
+  "id": "index.html",
   "icons": [
     {
       "src": "/icons/icon.png",
@@ -16,6 +17,12 @@
       "src": "/icons/iconx144.png",
       "type": "image/png",
       "sizes": "144x144"
+    },
+    {
+      "src": "/icons/iconx512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ]
 }

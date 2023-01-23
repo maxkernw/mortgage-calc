@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="icon/icon.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#7d70baff" />
+    <meta name="theme-color" content="#dec1ffff" />
 </head>
 
 <body>
@@ -41,11 +46,11 @@
                 <input id="deposit" type="number" value="1000000" />
             </section>
             <section>
-                <label for="employee-mortgage-rate">Personallån</label>
+                <label for="employee-mortgage-rate">Personalränta %</label>
                 <input id="employee-mortgage-rate" type="number" value="2.0" pattern="^\d*(\.\d{0,2})?$" />
             </section>
             <section>
-                <label for="mortgage-rate">Lån</label>
+                <label for="mortgage-rate">Ränta %</label>
                 <input id="mortgage-rate" type="number" value="4.0" pattern="^\d*(\.\d{0,2})?$" />
             </section>
         </div>

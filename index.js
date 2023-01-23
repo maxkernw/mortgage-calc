@@ -1,4 +1,11 @@
-
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+        navigator.serviceWorker
+            .register("/sw.js")
+            .then(res => console.log("service worker registered"))
+            .catch(err => console.log("service worker not registered", err))
+    })
+}
 const elements = [...document.querySelectorAll("input")].reduce((acc, e) => {
     acc[e.id] = e;
     acc[e.id] = {
@@ -51,7 +58,6 @@ function calculate() {
     const drift = parseFloat(elements['driftkostnad'].value / 12).toFixed(4);
     elements['other-expenses'].value = drift
     elements['other-expenses'].element.value = drift;
-    console.log(drift)
     elements['monthly-cost'].element.value = parseFloat(monthlyCost + parseFloat(interestPerMonth) + parseFloat(drift)).toFixed(4);
 
 }
@@ -62,18 +68,15 @@ function amortizationInPercent(mortgage) {
     let result = 0;
     if (mortgage / price >= .7) {
         // .0.2;
-        console.log("hit 70%")
         result += .02;
     }
     else if (mortgage / price >= .5) {
-        console.log("hit 50%")
         result += .01;
 
         ///
     }
     if ((salary * 4.5) < mortgage) {
         // 
-        console.log("hit salary")
         result += .01;
     }
 

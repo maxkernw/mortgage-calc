@@ -1,7 +1,7 @@
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {
         navigator.serviceWorker
-            .register("/sw.js", {
+            .register("/mortgage-calc/sw.js", {
                 scope: "."
             })
             .then(res => console.log("service worker registered"))

@@ -1,4 +1,4 @@
-const staticMortgage = "mortgage-calc-v1"
+const staticMortgage = "mortgage-calc"
 const assets = [
     "/",
     "/index.html",

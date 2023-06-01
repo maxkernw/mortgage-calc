@@ -44,7 +44,7 @@ function calculate() {
     elements['deposit-minimum'].value = depositMinimum;
     elements['deposit-minimum'].element.value = depositMinimum;
 
-    const interestPerMonth = ((2000000 * elements['employee-mortgage-rate'].value + (mortgage - 2000000) * elements['mortgage-rate'].value) / 12) / 100;
+    const interestPerMonth = ((3000000 * elements['employee-mortgage-rate'].value + (mortgage - 3000000) * elements['mortgage-rate'].value) / 12) / 100;
     elements['interest-cost-per-month'].value = interestPerMonth;
     elements['interest-cost-per-month'].element.value = interestPerMonth;
 
